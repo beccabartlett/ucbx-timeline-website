@@ -1,0 +1,45 @@
+body {
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.medium-font {
+    font-weight: 500;
+}
+
+.bold-font {
+    font-weight: 700;
+}
+
+.italic-font {
+    font-family: freight-text-pro, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px
+}
+
+.logo-container {
+    padding: 2em;
+    background: #C4BDA3;
+}
+
+.LogoWrapper {
+    display: block;
+    margin-block-start: .04rem;
+    margin-block-end: .05rem;
+    margin-inline-start: .05rem;
+    margin-inline-end: .05rem;
+    width: 100px
+}
+
+img {
+    max-width: 100%;
+}
+
+.fig-caption {
+    font-family: freight-text-pro, serif;
+    font-weight: 400;
+    font-style: italic;
+}
