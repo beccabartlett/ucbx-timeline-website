@@ -1,6 +1,7 @@
  /* grid */
 
- /* .row {
+ /* 
+ .row {
      background: #C4BDA3;
  }
 
@@ -74,14 +75,18 @@
 
  /* images and captions */
 
- .logo-container {
-     padding: 2rem;
-     /* background: #C4BDA3; */
- }
-
  .logo-wrapper {
      display: block;
      width: 100px
+ }
+
+ .logo2-container {
+     padding: 2rem;
+ }
+
+ .logo2-wrapper {
+     display: block;
+     width: 200px;
  }
 
  img {
@@ -94,4 +99,100 @@
      font-family: freight-text-pro, serif;
      font-weight: 400;
      font-style: italic;
+ }
+
+ /* slideshow */
+
+ img {
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+
+ .container {
+     max-width: 1200px;
+ }
+
+ .slick-slide {
+     margin: 0 5px;
+ }
+
+ .slick-list {
+     margin: 0 -5px;
+ }
+
+ /* header */
+
+ .header-sather {
+     overflow: hidden;
+     background-color: #C4BDA3;
+     margin: 0 0;
+     padding: 20px 10px;
+ }
+
+ .header-sather a {
+     float: left;
+     color: #1A3561;
+ }
+
+ .header-sather-right {
+     float: right;
+ }
+
+ @media screen and (max-width: 500px) {
+     .header-sather a {
+         float: none;
+         display: block;
+         text-align: left;
+     }
+     .header-sather-right {
+         float: none;
+     }
+ }
+
+ .footer-sather {
+     overflow: hidden;
+     background-color: #C4BDA3;
+     margin: 0 0;
+     padding: 20px 10px;
+     color: white;
+ }
+
+ .header-bayfog {
+     overflow: hidden;
+     background-color: #B0C9B5;
+     margin: 0 0;
+     padding: 20px 10px;
+ }
+
+ .header-bayfog a {
+     float: left;
+     color: #1A3561;
+ }
+
+ .header-sbayfog-right {
+     float: right;
+ }
+
+ @media screen and (max-width: 500px) {
+     .header-bayfog a {
+         float: none;
+         display: block;
+         text-align: left;
+     }
+     .header-bayfog-right {
+         float: none;
+     }
+ }
+
+ .footer-bayfog {
+     overflow: hidden;
+     background-color: #B0C9B5;
+     margin: 0 0;
+     padding: 20px 10px;
+     color: white;
+ }
+
+ .hr {
+     color: tomato;
  }

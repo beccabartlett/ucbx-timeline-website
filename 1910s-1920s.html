@@ -16,32 +16,39 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css"
         integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg=="
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
 </head>
 
 <body>
+
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="logo-container">
+        <!-- header -->
+        <div class="header-sather">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
                         <a href="./index.html" class="logo-wrapper"> <img src="assets/images/ucbe130-logo.png"></a>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="material-icons">
-                        menu
+                    <div class="col-sm-8">
+
+                    </div>
+                    <div class="col-sm-2">
+                        <a id="simple-menu" href="#sidr">
+                            <div class="material-icons">menu</div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
 
-    <main>
         <!-- side navigation -->
-        <aside>
-            this will be a side nav
-            <nav>
+        <nav>
+            <div id="sidr">
                 <ul>
+                    <li id="closeMenu">
+                        <div class="material-icons">
+                            close</div>
+                    </li>
                     <li><a href="./1890s-1900s.html">1890s 1900s</a></li>
                     <li><a href="./1910s-1920s.html">1910s 1920s</a></li>
                     <li><a href="./1930s-1940s.html">1930s 1940s</a></li>
@@ -50,10 +57,26 @@
                     <li><a href="./1990s-2010s.html">1990s 2010s</a></li>
                     <li><a href="./2021.html">2021</a></li>
                 </ul>
-            </nav>
-        </aside>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.js"
+                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+            <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('#simple-menu').sidr({
+                        side: 'right' // this can be changed to left to open the menu on the left
+                    });
 
+                    $('#closeMenu').on('click', function () {
+                        $.sidr('close', 'sidr');
+                    })
+                });
+            </script>
+        </nav>
 
+    </header>
+
+    <main>
         <section>
             <!-- page title -->
             <div class="container">
@@ -246,23 +269,26 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="logo-container">
-                        <a href="./index.html" class="logo-wrapper"> <img src="assets/images/ucbe130-logo.png"></a>
+        <div class="footer-sather">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="logo2-container">
+                            <a href="./index.html" class="logo2-wrapper"> <img
+                                    src="./assets/images/UNEX LOGO_cmyk_positive.png"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <p>
-                    Copyright &copy; 2021 UC Regents; all rights reserved
-                </p>
+                <div class="row">
+                    <p>
+                        Copyright &copy; 2021 UC Regents; all rights reserved
+                    </p>
+                </div>
             </div>
         </div>
-    </footer>
 
+    </footer>
 </body>
 
 </html>
