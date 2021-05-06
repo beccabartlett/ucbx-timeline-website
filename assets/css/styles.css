@@ -1,13 +1,8 @@
  /* grid */
 
- /* 
- .row {
-     background: #C4BDA3;
+ body {
+     margin: 0;
  }
-
- .col {
-     background: #C4BDA3;
- } */
 
  .column-box {
      width: 100%;
@@ -193,6 +188,6 @@
      color: white;
  }
 
- .hr {
-     color: tomato;
+ a {
+     color: white;
  }

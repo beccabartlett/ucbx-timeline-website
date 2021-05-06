@@ -61,20 +61,7 @@
                     <li><a href="./2021.html">2021</a></li>
                 </ul>
             </div>
-            <script src="https://code.jquery.com/jquery-3.6.0.js"
-                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-            <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    $('#simple-menu').sidr({
-                        side: 'right' // this can be changed to left to open the menu on the left
-                    });
 
-                    $('#closeMenu').on('click', function () {
-                        $.sidr('close', 'sidr');
-                    })
-                });
-            </script>
         </nav>
 
     </header>
@@ -99,8 +86,9 @@
                         <div class="col-sm-1"></div>
 
                         <div class="col">
-                            <img src="./assets/images/berkeley-video-placeholder.png" />
-                            <figcaption class="italic-font">This is my berkeley video</figcaption>
+                            <iframe width="853" height="480" src="https://www.youtube.com/watch?v=bJNTfXSSKa8"
+                                frameborder="0" allow-fullscreen></iframe>>
+
                         </div>
 
                         <div class="col-sm-1"></div>
@@ -326,18 +314,40 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="row">
+                    <p>
+                        <a href="https://extension.berkeley.edu/static/about/">
+                            About Us </a>
+                    </p>
+                </div>
                 <div class="row">
                     <p>
                         Copyright &copy; 2021 UC Regents; all rights reserved
                     </p>
                 </div>
+
             </div>
         </div>
 
     </footer>
 
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#simple-menu').sidr({
+                side: 'right' // this can be changed to left to open the menu on the left
+            });
 
+            $('#closeMenu').on('click', function () {
+                $.sidr('close', 'sidr');
+            })
+        });
+    </script>
+
+    <!-- javascript end -->
 </body>
 
 </html>
