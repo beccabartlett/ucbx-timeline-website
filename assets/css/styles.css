@@ -199,7 +199,7 @@
 
  .header-blue {
      overflow: hidden;
-     background-color: #FCB515;
+     background-color: #EEEEEE;
      margin: 0 0;
      padding: 20px 10px;
      color: #1A3561;
@@ -207,10 +207,10 @@
 
  .footer-blue {
      overflow: hidden;
-     background-color: #FCB515;
+     background-color: #EEEEEE;
      margin: 0 0;
      padding: 20px 10px;
-     color: white;
+     color: #1A3561;
  }
 
  .footer-sather {
@@ -238,7 +238,7 @@
  }
 
  a {
-     color: white;
+     color: #1A3561;
  }
 
  #menu-icon {
@@ -267,6 +267,7 @@
  .copyright {
      padding: 20px 0px 0px 25px;
      font-size: 12px;
+     color: #1A3561;
  }
 
  .about-us {
